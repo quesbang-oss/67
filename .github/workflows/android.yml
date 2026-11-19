@@ -22,7 +22,8 @@ jobs:
           packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
       - run: npm install
       - run: npm test
-      - run: npm run build\n      - run: npm run sync
+      - run: npm run build
+      - run: npm run sync
       - run: chmod +x android/gradlew
       - run: ./gradlew assembleDebug
         working-directory: android
